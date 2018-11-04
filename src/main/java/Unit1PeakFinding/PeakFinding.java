@@ -5,26 +5,11 @@ public class PeakFinding {
     public static void main(String[] args) {
         int sampleArray[] = {1, 3, 20, 4, 1, 0};
 
-        int sameElements[] = {1, 1, 1, 1, 1, 1};
+        System.out.println(findPeakLinearArrayBruteForce(sampleArray));
 
-        int increasingElements[] = {1, 2, 3, 4, 5, 6};
-
-        int decreasingElements[] = {6, 5, 4, 3, 2, 1};
-
-        int edgesMaxElements[] = {2, 1, 1, 1, 2};
-
-        System.out.println(findPeakLinear(sampleArray));
-
-        System.out.println(findPeakLinear(sameElements));
-
-        System.out.println(findPeakLinear(increasingElements));
-
-        System.out.println(findPeakLinear(decreasingElements));
-
-        System.out.println(findPeakLinear(edgesMaxElements));
     }
 
-    public static int findPeakLinear(int[] arr) {
+    public static int findPeakLinearArrayBruteForce(int[] arr) {
         int arrayLength = arr.length;
 
         if(arrayLength < 1){
