@@ -1,4 +1,4 @@
-package src.main.java.Unit1PeakFinding;
+package Unit1PeakFinding;
 
 public class PeakFinding {
 
@@ -24,7 +24,7 @@ public class PeakFinding {
         System.out.println(findPeakLinear(edgesMaxElements));
     }
 
-    private static int findPeakLinear(int[] arr) {
+    public static int findPeakLinear(int[] arr) {
         int arrayLength = arr.length;
 
         for(int i=0;i<arrayLength;i++) {
