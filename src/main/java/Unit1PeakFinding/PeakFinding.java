@@ -27,6 +27,10 @@ public class PeakFinding {
     public static int findPeakLinear(int[] arr) {
         int arrayLength = arr.length;
 
+        if(arrayLength < 1){
+            return -1;
+        }
+
         for(int i=0;i<arrayLength;i++) {
 
             if (i == 0) {
@@ -48,6 +52,4 @@ public class PeakFinding {
 
         return -1;
     }
-
-
 }
